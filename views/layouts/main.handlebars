@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Us</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheets/main.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    <a class="" id="logo" href="/">
+                    <img src="/assets/logo_start_us.svg" alt="" width="180" height="">
+                    </a> 
+                    <a role="button" class="navbar-burger " data-target="navMenu" aria-label="menu" aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    </a>
+                </div>   
+
+              <!-- navbar links -->
+                <div class="navbar-menu" id="navMenu"></div>
+                    {{#if loggedIn}} <!-- create condition for dev and member dashboard -->
+                    <a href="/" class="navbar-item">Home</a>
+                    {{#if member_type}}
+                    <a href="/member/" class="member navbar-item">Dashboard</a>
+                    {{/if}}
+                    {{#if developer_type}}
+                    <a href="/developer/" class="developer navbar-item">Dashboard</a>
+                    {{/if}}
+                    <a id="logout" href="/" class="navbar-item">Logout</a>
+                    {{else}}
+                    <a href="/" class="navbar-item">Home</a>
+                    <a href="/" class="navbar-item">How it Works</a>
+                    <a href="/login/" class="navbar-item">Login</a>
+                    {{/if}}
+                </div>
+            </nav>
+            
+        </header>
+        <main>
+            {{{ body }}}
+        </main>
+    </div>
+    <div class="wrapper">
+        <footer>
+            <div class="columns">
+                <div class="column is-one-third">
+                        <h4>Categories</h4>
+                        <ul>
+                            <li>Web Design</li>
+                            <li>Graphic Design</li>
+                            <li>Programming &amp; Tech</li>
+                        </ul>
+                </div>
+                <div class="column is-one-third">
+                        <h4>About</h4>
+                        <ul>
+                            <li>Partnerships</li>
+                            <li>Chamber of Commerce</li>
+                            <li>Associations</li>
+                        </ul>
+                </div>
+                <div class="column is-one-third">
+                        <h4>Support</h4>
+                        <ul>
+                            <li>Help &amp; Support</li>
+                            <li>Dev Team</li>
+                            <li>Members</li>
+                        </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    {{#if loggedIn}}
+    <script src="/javascript/logout.js"></script>
+    <script src="/javascript/burger.js"></script>
+    {{/if}}
+</body>
+
+</html>

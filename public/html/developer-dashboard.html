@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Us</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../stylesheets/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <a href="/">
+                <img src="../assets/logo_start_us.svg" alt="" width="180" height="">
+            </a>
+            <nav>
+                <a href="/">Home</a> |
+                <a href="/">How it Works</a> |
+                <a href="/login/">Login</a> |
+                <a href="/developer-dashboard/">Dev Dashboard</a> |
+                <a href="/member-dashboard/">Dev Dashboard</a> |
+                <a id="logout" href="/">Logout</a>
+            </nav>
+        </header>
+        
+    <main>
+        <!--start DEVELOPER-DASHBOARD.handlebar-->
+        <div class="container py-5">
+            <div class="row">
+                <h1>Developer Dashboard</h1>
+            </div>
+            <div class="row">
+                <h3 class="py-5">Service Requests from Members</h3>     
+            </div>
+            <div class="row">
+                <p>MEMBERS SERVICE REQUEST WILL RENDER HERE</p>
+            </div>
+            <div class="row">
+                <button type="submit" class="px-5" id="accept-project">ACCEPT PROJECT</button>
+            </div> 
+            <div class="row">
+                <h3 class="py-5">Your Projects</h3>
+                
+            </div> 
+            <div class="row">
+            <p>PROJECTS ACCEPTED WILL RENDER HERE</p>
+            </div>
+        </div>
+        <script scr="/javascript/accept-service.js"></script>
+        <!--END DEVELOPER-DASHBOARD.handlebar-->
+        </main>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <h4>Categories</h4>
+                        <ul>
+                            <li>Website</li>
+                            <li>Online Marketing</li>
+                            <li>Programming &amp; Tech</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm">
+                        <h4>About</h4>
+                        <ul>
+                            <li>Partnerships</li>
+                            <li>Chamber of Commerce</li>
+                            <li>Associations</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm">
+                        <h4>Support</h4>
+                        <ul>
+                            <li>Help &amp; Support</li>
+                            <li>Dev Team</li>
+                            <li>Members</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

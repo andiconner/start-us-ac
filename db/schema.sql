@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS start_us_db;
+
+CREATE DATABASE start_us_db;
