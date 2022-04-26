@@ -63,7 +63,7 @@ Edit & Delete a service
 - CSS
 - dotenv
 - express
-- express-hanflebars
+- express-handlebars
 - express-session
 - HTML
 - JavaScript
